@@ -1,0 +1,13 @@
+<div class=" d-flex justify-content-center">
+    <button class="btn btn-primary w-75" (click)="capturar()"> <i class="bi bi-camera"></i> Captural </button>
+</div>
+
+<div class=" d-flex flex-column justify-content-center">
+    <img #img class="w-50 my-2">
+    <div class="form-floating mb-3">
+        <input type="text" name="name" id="name" class=" form-control" [(ngModel)]="name"
+            placeholder="Nombre de la persona">
+        <label for="name">Agregar nombre</label>
+    </div>
+    <button class="btn btn-success my-2" (click)=registral()>Registral</button>
+</div>

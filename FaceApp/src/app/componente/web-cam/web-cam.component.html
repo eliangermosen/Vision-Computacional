@@ -1,0 +1,11 @@
+<div id="div-video" >
+<div *ngIf="play; else noplay">
+    <video #video id="video" width="500px" height="375px" autoplay="play" [srcObject]="stream"
+        (loadedmetadata)="detencion()"></video>
+    <canvas #canvas></canvas>
+</div>
+<ng-template #noplay class=" w-100 ">
+    <mat-spinner class=" mx-auto "></mat-spinner>
+    <p class=" display-3"> Iniciando Camara...</p>
+</ng-template>
+</div>

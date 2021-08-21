@@ -1,0 +1,8 @@
+<div class=" d-flex justify-content-center">
+    <button class="btn btn-primary w-75" (click)="identificar()">Identificar Rostro</button>
+</div>
+
+<div *ngIf="dataOk" class=" d-flex flex-column">
+    <div class="info rounded-pill mx-auto p-1"> <i class="bi bi-person"></i> Nombre : {{name}}</div>
+    <div class="info rounded-pill mx-auto p-1"> <i class="bi bi-calculator"></i> Fiabilidad : {{confidence }}</div>
+</div>

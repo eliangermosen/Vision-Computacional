@@ -1,0 +1,24 @@
+#divVideo{
+    height: 400px;
+
+    video{
+        display: flex;
+        justify-content: left;
+        align-items: left;
+    }
+    canvas{
+        position: absolute;
+    }
+}
+
+.info{
+
+    background-color: #3F51B5;
+    color: white;
+    margin-top: .5em;
+
+    i{
+        color: white;
+    }
+}
+
